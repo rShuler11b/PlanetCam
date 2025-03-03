@@ -21,6 +21,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="button_control.py" />
+    <Compile Include="camera_control.py" />
+    <Compile Include="Config.py" />
+    <Compile Include="display_control.py" />
     <Compile Include="PlanetCam.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
