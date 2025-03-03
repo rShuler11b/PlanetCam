@@ -7,6 +7,7 @@ import time
 import button_control
 import camera_control
 import display_control
+import RPi.GPIO as GPIO
 from config import BUTTON_FEED, BUTTON_CAPTURE
 
 try:
