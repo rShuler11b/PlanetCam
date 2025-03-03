@@ -4,8 +4,8 @@ Centralized settings for easier modifications.
 """
 
 # GPIO Button Pins
-BUTTON_FEED = 17
-BUTTON_CAPTURE = 27
+BUTTON_FEED = 23
+BUTTON_CAPTURE = 24
 
 # Camera Settings
 IMAGE_WIDTH = 240
