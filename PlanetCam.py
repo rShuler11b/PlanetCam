@@ -10,6 +10,9 @@ import display_control
 import RPi.GPIO as GPIO
 from config import BUTTON_FEED, BUTTON_CAPTURE
 
+DEFAULT_EXPOSURE_TIME_NS = 5000000000  # Default exposure time in nanoseconds (5 seconds)
+
+
 try:
     while True:
         if button_control.is_button_pressed(BUTTON_FEED):
@@ -17,7 +20,7 @@ try:
             button_control.wait_for_button_release(BUTTON_FEED)
 
         if button_control.is_button_pressed(BUTTON_CAPTURE):
-            image_path = camera_control.capture_image()
+            image_path = camera_control.capture_raw(DEFAULT_EXPOSURE_TIME_NS)
             display_control.display_image(image_path)
             button_control.wait_for_button_release(BUTTON_CAPTURE)
 
